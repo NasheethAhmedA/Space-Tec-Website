@@ -1,0 +1,14 @@
+# frontend tasks
+
+Fork this repo and make your changes to it in this frontend folder.
+
+1. Make a cartoonish themed homepage for SpaceTec.
+    - take details from sandcodes updates
+    - make some interactive way for the user to reach chat interface page
+
+2. Make a chat interface page where the user can chat with an AI.
+    - Make a dedicated page for chat interface
+    - design the messaging system and make some place for API integration till endpoint is made
+
+
+All the best!!

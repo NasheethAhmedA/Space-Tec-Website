@@ -1,0 +1,14 @@
+# backend tasks
+
+Fork this repo and make your changes to it in this frontend folder.
+
+1. Make a RAG application of CHAT AI with prompt engineering
+    - make use of free alternatives as of now
+    - use python for creating RAG
+
+2. Make an endpoint for AI chat bot.
+    - it should take a request body with the user's message.
+    - it should response with an AI reply.
+
+
+All the best!!
