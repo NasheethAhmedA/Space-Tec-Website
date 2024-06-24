@@ -1,0 +1,12 @@
+command to run in cmd (testing):
+
+    fastapi dev SpaceTecAPI/main.py
+
+
+command to deploy:
+
+    fastapi run SpaceTecAPI/main.py
+
+    or
+
+    python SpaceTecAPI/main.py
