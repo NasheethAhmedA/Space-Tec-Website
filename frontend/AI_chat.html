@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chat Assistant</title>
+    <link rel="icon" href="assets/ChatBot_Hackunia_transparent.png" type="image/png" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <style>
+        .btn-outline-warning {
+          color: greenyellow;
+          border-color: greenyellow;
+        }
+        .btn-outline-warning:hover {
+          color: black;
+          background-color: greenyellow;
+          border-color: greenyellow;
+        }
+
+        #replyArea {
+          background-color: greenyellow;
+          height: 25%;
+          width: 100%;
+          border: 5px solid white;
+          border-radius: 5px;
+          overflow-y: scroll;
+        }
+
+        html,
+        body {
+          height: 100%;
+          margin: 0;
+          padding: 0;
+        }
+  
+        ::-webkit-scrollbar {
+          width: 6px;
+        }
+  
+        ::-webkit-scrollbar-track {
+          -webkit-box-shadow: inset 0 0 6px rgba(200, 200, 200, 1);
+        }
+  
+        ::-webkit-scrollbar-thumb {
+          background-color: #fff;
+          -webkit-box-shadow: inset 0 0 6px rgba(90, 90, 90, 0.7);
+        }
+      </style>
+  </head>
+  <body class="bg-black">
+    <nav class="navbar navbar-dark navbar-expand-lg bg-dark">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img
+            src="assets/ChatBot_Hackunia.png"
+            alt=""
+            width="32"
+            height="32"
+            class="d-inline-block align-text-center"
+          />
+          SpaceTec
+        </a>
+        <button
+          class="navbar-toggler d-lg-none"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbar"
+          aria-controls="navbar"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbar">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Survival Guide</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Alien_detection.html">Detection Map</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="container d-flex justify-content-center align-items-center">
+      <img src="assets/ChatBot_Hackunia_transparent.png" alt="AI Assistant" class="contain w-25 h-25">
+    </div>
+
+    <div class="container" id="replyArea">
+        <p class=" text-dark">lorem200</p>
+    </div>
+
+    <div class="input-group mt-1 w-100">
+        <div class="container d-flex justify-content-center align-items-center  w-75">
+            <input type="text" class="form-control rounded-end-0" placeholder="Type your message" aria-label="message" aria-describedby="sendbtn">
+            <button class="btn btn-outline-warning rounded-start-0" type="button" id="sendbtn">SEND</button>
+        </div>
+        
+      </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+      integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

@@ -4,7 +4,6 @@ from pydantic import BaseModel
 import json
 import os
 
-
 app = FastAPI()
 my_client = Client()
 
@@ -27,6 +26,10 @@ def write_data(data: Marker) -> None:
     with open(DATA_FILE, "w") as file:
         json.dump(data, file)
 
+@app.get("/")
+def read_root():
+    return {"Hello": "Hackunia"}
+
 @app.get("/markers", response_model=list[Marker])
 def get_markers():
     return read_data()
@@ -38,6 +41,7 @@ def add_marker(marker: Marker):
         data.append(marker.dict())
         write_data(data)
     else:
+        # Logging the error in the console
         print("Marker already exists")
     return marker
 
