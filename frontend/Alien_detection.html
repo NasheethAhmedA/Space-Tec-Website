@@ -51,16 +51,16 @@
   <body class="bg-dark">
     <nav class="navbar navbar-dark navbar-expand-lg bg-dark">
       <div class="container">
-        <a class="navbar-brand" href="#">
+        <h1 class="navbar-brand">
           <img
-            src="assets/Alien_Hackunia_transparent.png"
+            src="assets/Alien_Hackunia.png"
             alt=""
             width="32"
             height="32"
             class="d-inline-block align-text-center"
           />
           SpaceTec
-        </a>
+        </h1>
         <button
           class="navbar-toggler d-lg-none"
           type="button"
@@ -78,7 +78,7 @@
               <a class="nav-link" href="index.html">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Survival Guide</a>
+              <a class="nav-link" href="Survival_guide.html">Survival Guide</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="AI_chat.html">Assistant Chat</a>
@@ -100,6 +100,7 @@
       </button>
     </div>
 
+    <script src="env.js" type="text/javascript"></script>
     <script>
       let map;
       const markers = [];
@@ -111,6 +112,9 @@
           center: { lat: -34.397, lng: 150.644 },
           zoom: 8,
         });
+
+        // Fetch and display other marked locations
+        fetchMarkedLocations();
 
         // Try HTML5 geolocation to get the user's current location
         if (navigator.geolocation) {
@@ -126,9 +130,6 @@
 
               // Add a marker at the user's current location
               currentMarker(pos);
-
-              // Fetch and display other marked locations (example function)
-              fetchMarkedLocations();
             },
             () => {
               handleLocationError(true, map.getCenter());
@@ -197,7 +198,7 @@
       async function fetchMarkedLocations() {
         // Fetch the marked locations from the backend
         let res = await fetch(
-          "https://spacetec-backend-o76obk1vi-nasheeths-projects.vercel.app/markers"
+          BACKEND_URL + "/markers"
         );
         res
           .json()
